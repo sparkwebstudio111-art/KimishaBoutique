@@ -106,30 +106,24 @@ const productsData = {
 
 
 
-  westernwear: [
-
-    { id: 27, name: "Angel t-shirt", image: western1, price: "₹ 1,700", desc: "It is the best choice for party wear. " },
-
-  ],
-
 
   nighty: [
   {
-    id: 28,
+    id: 27,
     name: "Floral Cotton Nighty",
     image: nighty1,
     price: "₹ 799",
     desc: "Soft cotton nighty with elegant floral prints. Comfortable for daily wear."
   },
   {
-    id: 29,
+    id: 28,
     name: "Premium Printed Nighty",
     image: nighty2,
     price: "₹ 899",
     desc: "Premium quality printed nighty made with breathable fabric for all-day comfort."
   },
   {
-    id: 30,
+    id: 29,
     name: "Designer Nighty",
     image: nighty3,
     price: "₹ 999",

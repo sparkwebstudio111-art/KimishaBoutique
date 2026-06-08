@@ -28,7 +28,7 @@ import aari3 from "../images/aari3.png"
 import aari4 from "../images/aari4.png"
 import aari5 from "../images/aari5.png"
 
-import western from "../images/western.png"
+// import western from "../images/western.png"
 
 import blousecut1 from "../images/blousecut1.png"
 import tissueSaree1 from "../images/tissueSaree.png"
@@ -190,15 +190,15 @@ export const PRODUCT = [
 
   { id: 56, name: "kangipuram saree", image: tissueSaree1, price: "₹ 1,800", desc: " very quality tissue saree for all color persons ", category: "tissue" },
 
-  { id: 57, name: "Angel t-shirt", image: western, price: "₹ 1,700", desc: "It is the best choice for party wear. ", category: "westernwear" },
+  // { id: 57, name: "Angel t-shirt", image: western, price: "₹ 1,700", desc: "It is the best choice for party wear. ", category: "westernwear" },
 
-  { id: 58, name: "Closed neck cut", image: blousecut1, price: "₹ 1,700", desc: "It is the best choice for party wear. ", category: "blouse" },
+  { id: 57, name: "Closed neck cut", image: blousecut1, price: "₹ 1,700", desc: "It is the best choice for party wear. ", category: "blouse" },
 
-  { id: 59, name: "Sarara model", image: partywear1, price: "₹ 2,300", desc: "The real sarara model in low price.", category: "partywear" },
+  { id: 58, name: "Sarara model", image: partywear1, price: "₹ 2,300", desc: "The real sarara model in low price.", category: "partywear" },
 
 
   {
-  id: 60,
+  id: 59,
   name: "Floral Cotton Nighty",
   image: nighty1,
   price: "₹ 799",
@@ -207,7 +207,7 @@ export const PRODUCT = [
 },
 
 {
-  id: 61,
+  id: 60,
   name: "Premium Printed Nighty",
   image: nighty2,
   price: "₹ 899",
@@ -216,7 +216,7 @@ export const PRODUCT = [
 },
 
 {
-  id: 62,
+  id: 61,
   name: "Designer Nighty",
   image: nighty3,
   price: "₹ 999",

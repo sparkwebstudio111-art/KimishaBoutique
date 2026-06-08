@@ -18,7 +18,6 @@ const FILTERS = [
   { key: "formalwear", label: "Formal Wear", icon: Sparkles },
   { key: "aarwork", label: "Aari Work", icon: Sparkles },
   { key: "anarkali", label: "Anarkali", icon: Sparkles },
-  { key: "westernwear", label: "Western Wear", icon: Sparkles },
   { key: "blouse", label: "Blouse Model", icon: Sparkles },
   { key: "partywear", label: "Party Wear", icon: Sparkles },
    { key: "nighty", label: "nighty", icon: Sparkles },

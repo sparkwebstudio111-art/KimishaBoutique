@@ -100,14 +100,14 @@ function Collections() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 
                     {/* Badge */}
-                    <div className="absolute left-5 top-5 rounded-full border border-white/20 bg-white/10 px-4 py-2 backdrop-blur-md">
-                      <span
-                        className="text-[11px] uppercase tracking-[3px] text-white"
-                        style={{ fontFamily: "Inter" }}
-                      >
-                        Premium
-                      </span>
-                    </div>
+                    <div className="absolute left-2 top-2 sm:left-4 sm:top-4 md:left-5 md:top-5 rounded-full border border-white/20 bg-white/10 px-2 py-1 sm:px-3 sm:py-1.5 md:px-4 md:py-2 backdrop-blur-md">
+  <span
+    className="text-[9px] sm:text-[10px] md:text-[11px] uppercase tracking-[1px] sm:tracking-[2px] md:tracking-[3px] text-white"
+    style={{ fontFamily: "Inter" }}
+  >
+    Premium
+  </span>
+</div>
                   </div>
 
                   {/* Content */}

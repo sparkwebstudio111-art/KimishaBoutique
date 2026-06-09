@@ -20,18 +20,18 @@ const FILTERS = [
   { key: "anarkali", label: "Anarkali", icon: Sparkles },
   { key: "blouse", label: "Blouse Model", icon: Sparkles },
   { key: "partywear", label: "Party Wear", icon: Sparkles },
-   { key: "nighty", label: "nighty", icon: Sparkles },
+  { key: "nighty", label: "nighty", icon: Sparkles },
 ];
 
 function Product() {
   const [open, setOpen] = useState(false);
   const [filter, setFilter] = useState("all");
   const [search, setSearch] = useState("");
-  
 
- useEffect(() => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-}, [filter]);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [filter]);
 
   const filteredProducts = PRODUCT.filter((item) => {
     const matchFilter =
@@ -45,7 +45,7 @@ function Product() {
   });
 
   const handleInquire = (item) => {
-    const phone = "9003866443";
+    const phone = "919003866443";
 
     const message = `Hello Kimisha Boutique 👋
 
@@ -71,12 +71,12 @@ Thank You ❤️`;
 
   return (
 
-      <div>
-            <div className="fixed inset-0  -z-50 bg-[#14091d] overflow-hidden">
-    <img
-  src={kimishaBackground}
-  alt="Kimisha Boutique"
-  className="
+    <div>
+      <div className="fixed inset-0  -z-50 bg-[#14091d] overflow-hidden">
+        <img
+          src={kimishaBackground}
+          alt="Kimisha Boutique"
+          className="
     w-full
     h-full
     object-contain
@@ -87,48 +87,48 @@ Thank You ❤️`;
     select-none
     pointer-events-none
   "
-/>
+        />
       </div >
 
       {/* Soft Overlay */}
 
       <div className="fixed inset-0 -z-40 bg-gradient-to-b from-black/30 via-black/30 to-black/30" />
- <div className="relative z-10 min-h-screen">
+      <div className="relative z-10 min-h-screen">
 
 
-   <section className="relative md:mt-[10px]  min-h-screen overflow-hidden bg-black/[0.37] ">
-  {/* Luxury Background */}
-  <div className="absolute inset-0">
-    <div className="absolute top-0 left-0 h-[700px] w-[700px] rounded-full bg-fuchsia-700/10 blur-[220px]" />
-    <div className="absolute bottom-0 right-0 h-[700px] w-[700px] rounded-full bg-violet-700/10 blur-[220px]" />
-    <div className="absolute left-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-purple-500/5 blur-[180px]" />
-  </div>
+        <section className="relative md:mt-[10px]  min-h-screen overflow-hidden bg-black/[0.37] ">
+          {/* Luxury Background */}
+          <div className="absolute inset-0">
+            <div className="absolute top-0 left-0 h-[700px] w-[700px] rounded-full bg-fuchsia-700/10 blur-[220px]" />
+            <div className="absolute bottom-0 right-0 h-[700px] w-[700px] rounded-full bg-violet-700/10 blur-[220px]" />
+            <div className="absolute left-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-purple-500/5 blur-[180px]" />
+          </div>
 
-  {/* Grid Pattern */}
-  <div
-    className="absolute inset-0 opacity-[0.03]"
-    style={{
-      backgroundImage:
-        "linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px)",
-      backgroundSize: "80px 80px",
-    }}
-  />
+          {/* Grid Pattern */}
+          <div
+            className="absolute inset-0 opacity-[0.03]"
+            style={{
+              backgroundImage:
+                "linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px)",
+              backgroundSize: "80px 80px",
+            }}
+          />
 
-  <div className="relative z-10 max-w-[1600px] mx-auto px-6 py-6">
-    {/* Hero */}
-    <motion.div
-      initial={{ opacity: 0, y: 80 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 1 }}
-      className="text-center mb-24"
-    >
-      <span className="inline-block px-6 py-2  rounded-full border border-white/10 bg-white/5 backdrop-blur-xl text-xs tracking-[5px] uppercase text-purple-300">
-        Exclusive Fashion Collections
-      </span>
+          <div className="relative z-10 max-w-[1600px] mx-auto px-6 py-6">
+            {/* Hero */}
+            <motion.div
+              initial={{ opacity: 0, y: 80 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              className="text-center mb-24"
+            >
+              <span className="inline-block px-6 py-2  rounded-full border border-white/10 bg-white/5 backdrop-blur-xl text-xs tracking-[5px] uppercase text-purple-300">
+                Exclusive Fashion Collections
+              </span>
 
-      <h1
-         className="
+              <h1
+                className="
     mt-6
     text-4xl
     sm:text-5xl
@@ -138,18 +138,18 @@ Thank You ❤️`;
     text-white
     leading-tight
   "
-        style={{
-          fontFamily: "Cormorant Garamond ",
-        }}
-      >
-        Luxury Fashion
-        <br />
-        <span className="bg-gradient-to-r from-purple-300 via-pink-300 to-violet-300 bg-clip-text text-transparent">
-          Reimagined
-        </span>
-      </h1>
+                style={{
+                  fontFamily: "Cormorant Garamond ",
+                }}
+              >
+                Luxury Fashion
+                <br />
+                <span className="bg-gradient-to-r from-purple-300 via-pink-300 to-violet-300 bg-clip-text text-transparent">
+                  Reimagined
+                </span>
+              </h1>
 
-      <p  className="
+              <p className="
     max-w-3xl
     mx-auto
     mt-6
@@ -161,16 +161,16 @@ Thank You ❤️`;
     leading-7
     md:leading-9
   ">
-        Curated collections of designer sarees, bridal couture,
-        premium Anarkalis and handcrafted fashion pieces created
-        for timeless elegance.
-      </p>
+                Curated collections of designer sarees, bridal couture,
+                premium Anarkalis and handcrafted fashion pieces created
+                for timeless elegance.
+              </p>
 
-      {/* Search */}
-      <div className="relative mt-12 mx-auto w-full max-w-4xl px-4 sm:px-0">
-  <Search
-    size={20}
-    className="
+              {/* Search */}
+              <div className="relative mt-12 mx-auto w-full max-w-4xl px-4 sm:px-0">
+                <Search
+                  size={20}
+                  className="
       absolute
       left-8
       top-1/2
@@ -178,14 +178,14 @@ Thank You ❤️`;
       text-purple-100
       pointer-events-none
     "
-  />
+                />
 
-  <input
-    type="text"
-    value={search}
-    onChange={(e) => setSearch(e.target.value)}
-    placeholder="Search luxury collections..."
-    className="
+                <input
+                  type="text"
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
+                  placeholder="Search luxury collections..."
+                  className="
       w-full
 
       h-14
@@ -218,14 +218,14 @@ Thank You ❤️`;
       transition-all
       duration-300
     "
-  />
-</div>
-    </motion.div>
+                />
+              </div>
+            </motion.div>
 
-    {/* Mobile Filter Button */}
-   <button
-  onClick={() => setOpen(true)}
-  className="
+            {/* Mobile Filter Button */}
+            <button
+              onClick={() => setOpen(true)}
+              className="
     lg:hidden
     fixed
     bottom-20
@@ -259,20 +259,20 @@ Thank You ❤️`;
     transition-all
     duration-300
   "
->
-  <Filter size={22} />
-</button>
-    {open && (
-      <div
-        onClick={() => setOpen(false)}
-        className="fixed inset-0 bg-black/70 backdrop-blur-sm z-40"
-      />
-    )}
+            >
+              <Filter size={22} />
+            </button>
+            {open && (
+              <div
+                onClick={() => setOpen(false)}
+                className="fixed inset-0 bg-black/70 backdrop-blur-sm z-40"
+              />
+            )}
 
-    <div className="flex bg-[#05010a] p-3 rounded-xl gap-10">
-      {/* Sidebar */}
-  <aside
-  className={`
+            <div className="flex bg-[#05010a] p-3 rounded-xl gap-10">
+              {/* Sidebar */}
+              <aside
+                className={`
     fixed lg:sticky
     top-0 left-0
     h-screen
@@ -293,34 +293,33 @@ lg:w-80
     transition-transform
     duration-300
 
-    ${
-      open
-        ? "translate-x-0"
-        : "-translate-x-full lg:translate-x-0"
-    }
+    ${open
+                    ? "translate-x-0"
+                    : "-translate-x-full lg:translate-x-0"
+                  }
   `}
->
-  {/* Header */}
-  <div className="shrink-0 px-8 pt-28 pb-8 border-b border-white/5">
-    <div className="flex items-center justify-between">
-      <div>
-        <p className="text-xs uppercase tracking-[4px] text-purple-400">
-          Collections
-        </p>
+              >
+                {/* Header */}
+                <div className="shrink-0 px-8 pt-28 pb-8 border-b border-white/5">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="text-xs uppercase tracking-[4px] text-purple-400">
+                        Collections
+                      </p>
 
-        <h2
-          className="mt-2 text-3xl text-white"
-          style={{
-            fontFamily: "Cormorant Garamond",
-          }}
-        >
-          Categories
-        </h2>
-      </div>
+                      <h2
+                        className="mt-2 text-3xl text-white"
+                        style={{
+                          fontFamily: "Cormorant Garamond",
+                        }}
+                      >
+                        Categories
+                      </h2>
+                    </div>
 
-      <button
-        onClick={() => setOpen(false)}
-        className="
+                    <button
+                      onClick={() => setOpen(false)}
+                      className="
           lg:hidden
           h-10
           w-10
@@ -333,15 +332,15 @@ lg:w-80
           hover:bg-white/10
           transition
         "
-      >
-        <X size={18} />
-      </button>
-    </div>
-  </div>
+                    >
+                      <X size={18} />
+                    </button>
+                  </div>
+                </div>
 
-  {/* Scrollable Categories */}
-  <div
-    className="
+                {/* Scrollable Categories */}
+                <div
+                  className="
       flex-1
       overflow-y-auto
 
@@ -353,19 +352,19 @@ lg:w-80
 
       [&::-webkit-scrollbar]:hidden
     "
-  >
-    <div className="space-y-2">
-      {FILTERS.map((item) => {
-        const Icon = item.icon;
+                >
+                  <div className="space-y-2">
+                    {FILTERS.map((item) => {
+                      const Icon = item.icon;
 
-        return (
-          <button
-            key={item.key}
-            onClick={() => {
-              setFilter(item.key);
-              setOpen(false);
-            }}
-            className={`
+                      return (
+                        <button
+                          key={item.key}
+                          onClick={() => {
+                            setFilter(item.key);
+                            setOpen(false);
+                          }}
+                          className={`
               group
               w-full
 
@@ -381,72 +380,71 @@ lg:w-80
               transition-all
               duration-300
 
-              ${
-                filter === item.key
-                  ? `
+              ${filter === item.key
+                              ? `
                     bg-white
                     text-black
                     shadow-lg
                   `
-                  : `
+                              : `
                     text-gray-400
                     hover:text-white
                     hover:bg-white/5
                   `
-              }
+                            }
             `}
-          >
-            <Icon
-              size={18}
-              className="shrink-0"
-            />
+                        >
+                          <Icon
+                            size={18}
+                            className="shrink-0"
+                          />
 
-            <span className="text-sm font-medium">
-              {item.label}
-            </span>
-          </button>
-        );
-      })}
-    </div>
-  </div>
+                          <span className="text-sm font-medium">
+                            {item.label}
+                          </span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
 
-  {/* Bottom Fade Effect */}
-  <div className="pointer-events-none absolute bottom-20 left-0 right-0 h-16 bg-gradient-to-t from-[#0c0c0f] to-transparent" />
+                {/* Bottom Fade Effect */}
+                <div className="pointer-events-none absolute bottom-20 left-0 right-0 h-16 bg-gradient-to-t from-[#0c0c0f] to-transparent" />
 
-  {/* Footer */}
-  <div className="shrink-0 p-6 border-t border-white/5 bg-[#0c0c0f]">
-    <div className="flex items-center justify-between">
-      <span className="text-gray-500 text-sm">
-        Available
-      </span>
+                {/* Footer */}
+                <div className="shrink-0 p-6 border-t border-white/5 bg-[#0c0c0f]">
+                  <div className="flex items-center justify-between">
+                    <span className="text-gray-500 text-sm">
+                      Available
+                    </span>
 
-      <span className="text-white font-medium">
-        {filteredProducts.length}
-      </span>
-    </div>
-  </div>
-</aside>
+                    <span className="text-white font-medium">
+                      {filteredProducts.length}
+                    </span>
+                  </div>
+                </div>
+              </aside>
 
-      {/* Products */}
-      <div className="flex-1 ">
-        <div className="flex items-center justify-between mb-12">
-          <div>
-            <h2
-              className="text-5xl text-white"
-              style={{
-                fontFamily: "Cormorant Garamond",
-              }}
-            >
-              Luxury Collections
-            </h2>
+              {/* Products */}
+              <div className="flex-1 ">
+                <div className="flex items-center justify-between mb-12">
+                  <div>
+                    <h2
+                      className="text-5xl text-white"
+                      style={{
+                        fontFamily: "Cormorant Garamond",
+                      }}
+                    >
+                      Luxury Collections
+                    </h2>
 
-            <p className="text-gray-400 mt-3">
-              {filteredProducts.length} Exclusive Designs
-            </p>
-          </div>
-        </div>
+                    <p className="text-gray-400 mt-3">
+                      {filteredProducts.length} Exclusive Designs
+                    </p>
+                  </div>
+                </div>
 
-        <div  className="
+                <div className="
     grid
     grid-cols-1
     sm:grid-cols-2
@@ -455,20 +453,20 @@ lg:w-80
     sm:gap-6
     lg:gap-8
   ">
-          {filteredProducts.map((item, index) => (
-            <motion.div
-              key={item.id}
-              initial={{ opacity: 0, y: 80 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{
-                duration: 0.7,
-                delay: index * 0.08,
-              }}
-              whileHover={{
-                y: -12,
-              }}
-              className="
+                  {filteredProducts.map((item, index) => (
+                    <motion.div
+                      key={item.id}
+                      initial={{ opacity: 0, y: 80 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{
+                        duration: 0.7,
+                        delay: index * 0.08,
+                      }}
+                      whileHover={{
+                        y: -12,
+                      }}
+                      className="
                 group
                 overflow-hidden
                 rounded-[32px]
@@ -480,52 +478,52 @@ lg:w-80
                 transition-all
                 duration-500
               "
-            >
-              <div className="relative overflow-hidden">
-                <img
-                  src={item.image}
-                  alt={item.name}
-                  className="
+                    >
+                      <div className="relative overflow-hidden">
+                        <img
+                          src={item.image}
+                          alt={item.name}
+                          className="
                      h-[320px]
   sm:h-[400px]
   lg:h-[500px]
   w-full
   object-cover
                   "
-                />
+                        />
 
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
 
-                <div className="absolute top-5 right-5">
-                  <div className="px-4 py-2 rounded-full bg-black/40 backdrop-blur-xl border border-white/10 text-white">
-                    {item.price}
-                  </div>
-                </div>
+                        <div className="absolute top-5 right-5">
+                          <div className="px-4 py-2 rounded-full bg-black/40 backdrop-blur-xl border border-white/10 text-white">
+                            {item.price}
+                          </div>
+                        </div>
 
-                <div className="absolute bottom-8 left-8 right-8">
-                  <p className="text-purple-300 uppercase tracking-[4px] text-xs">
-                    {item.category}
-                  </p>
+                        <div className="absolute bottom-8 left-8 right-8">
+                          <p className="text-purple-300 uppercase tracking-[4px] text-xs">
+                            {item.category}
+                          </p>
 
-                  <h3
-                    className="text-4xl text-white mt-2"
-                    style={{
-                      fontFamily: "Cormorant Garamond",
-                    }}
-                  >
-                    {item.name}
-                  </h3>
-                </div>
-              </div>
+                          <h3
+                            className="text-4xl text-white mt-2"
+                            style={{
+                              fontFamily: "Cormorant Garamond",
+                            }}
+                          >
+                            {item.name}
+                          </h3>
+                        </div>
+                      </div>
 
-              <div className="p-5 sm:p-6 lg:p-8">
-                <p className="text-gray-400 leading-8">
-                  {item.desc}
-                </p>
+                      <div className="p-5 sm:p-6 lg:p-8">
+                        <p className="text-gray-400 leading-8">
+                          {item.desc}
+                        </p>
 
-                <button
-                  onClick={() => handleInquire(item)}
-                  className="
+                        <button
+                          onClick={() => handleInquire(item)}
+                          className="
                     mt-6
   sm:mt-8
   w-full
@@ -543,19 +541,19 @@ lg:w-80
                     duration-300
                     shadow-[0_10px_40px_rgba(168,85,247,0.35)]
                   "
-                >
-                  <p className="text-sm md:text-md">Enquire on WhatsApp</p>
-                </button>
+                        >
+                          <p className="text-sm md:text-md">Enquire on WhatsApp</p>
+                        </button>
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
               </div>
-            </motion.div>
-          ))}
-        </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
-  </div>
-</section>
- </div>
-      </div>
   );
 }
 

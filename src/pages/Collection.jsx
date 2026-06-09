@@ -17,7 +17,7 @@ const Collection = () => {
   );
 
   const handleInquire = (product) => {
-    const WHATSAPP_NUMBER = "9366722532";
+    const WHATSAPP_NUMBER = "919003866443";
 
     const message = `Hello Kimisha Boutique! 💖
 

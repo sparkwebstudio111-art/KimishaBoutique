@@ -123,7 +123,7 @@ const Cart = () => {
       localStorage.setItem("kimisha_orders", JSON.stringify([newOrder, ...existingOrders]));
 
       // Construct a premium WhatsApp message
-      const WHATSAPP_NUMBER = "9366722532";
+      const WHATSAPP_NUMBER = "919003866443";
       const itemsList = cart
         .map((item) => `- *${item.name}* (Size: ${item.size === "default" ? "Standard" : item.size}, Qty: ${item.quantity}) - ₹${item.price}`)
         .join("\n");

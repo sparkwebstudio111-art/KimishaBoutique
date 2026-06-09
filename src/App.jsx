@@ -19,10 +19,16 @@ function ScrollToTopOnRouteChange() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    // Disable smooth scrolling temporarily for instant jump
+    document.documentElement.style.scrollBehavior = "auto";
+    
+    // Force a synchronous jump to top
+    window.scrollTo({ top: 0, behavior: "instant" });
+    
+    // Restore smooth scrolling on the next frame so it doesn't batch
+    setTimeout(() => {
+      document.documentElement.style.scrollBehavior = "smooth";
+    }, 10);
   }, [pathname]);
 
   return null;

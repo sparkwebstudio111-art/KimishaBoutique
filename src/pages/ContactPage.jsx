@@ -352,7 +352,7 @@ function ContactPage() {
           <button
             onClick={() =>
               window.open(
-                "https://api.whatsapp.com/send?phone=9003866443",
+                "https://api.whatsapp.com/send?phone=919003866443",
                 "_blank"
               )
             }
